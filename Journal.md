@@ -18,3 +18,15 @@
 * HTML-Grundgerüst mit den öffnenden und schließenden Tags verstehen. 
 * Schließende Tags haben einen führenden "/"
 
+## 19.11.2021 
+* Benutzernamen hinzugefügt
+* E-mail adresse hinzugefügt
+* About seite in Git-hub hochgeladen
+* Kommentar in HTML einfügen <!-- ich bin ein Kommentar--> Kommentare werden vom Browser nicht interpretiert
+* Repository mit Github synchronisieren in einem mehrschritigen prozess:
+ 1.Datei = Autospeicher einschalten bzw. auf speichern klicken  
+ 2.In VSC auf das Git-symbol in der Leiste ganz links klicken. Die Anzahl der anstehenden änderungen werden in einem Blauen Kreis angezeigt
+ 3.Eine Nachricht zu den vorgenommenen Änderungen des Quelltextes eintippen. Dann *Commit-Hacken klicken* 
+ 4.Pull und Push auslösen, indem auf das Rädchen bzw. die Wolke ganz unten geklickt wird. 
+
+
