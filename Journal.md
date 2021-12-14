@@ -5,10 +5,10 @@
 * Eine Neue Datei im VSC erstellen und bearbeiten.
 * Ordner in den Schnellzugriff im Windows Explorer verschieben. 
 * Die Auszeichnungssprache Markdown (Dateiendung.md) mit einfachen Elementen verstehen. 
-  * Überschrift der 1.Ordnung (# Überschrift1).
-  * Überschrift der 2.Ordnung (## Überschrift2).
-  * Aufzählung und Einrückung (* Aufzählung ...).
-  * Issue für die Erstellung einer HTML-Seite erstellt. 
+* Überschrift der 1.Ordnung (# Überschrift1).
+* Überschrift der 2.Ordnung (## Überschrift2).
+* Aufzählung und Einrückung (* Aufzählung ...).
+* Issue für die Erstellung einer HTML-Seite erstellt. 
 
 ## 16.11.2021
 * Absätze in HTML erstellen: <p>...</P>.
@@ -29,19 +29,17 @@
  3.Eine Nachricht zu den vorgenommenen Änderungen des Quelltextes eintippen. Dann *Commit-Hacken klicken*. 
  4.Pull und Push auslösen, indem auf das Rädchen bzw. die Wolke ganz unten geklickt wird. 
 
- ## 23.11.2021
- * Journal aktualisiert.
+## 23.11.2021
+* Journal aktualisiert.
  
 
 ## 26.11.2021
 * Quelltext kopieren im Explorer (server.js,package-lock.json,package.json).
 * Terminal server starten. \node_modules\.bin\nodemon .\server.js.
 * Terminal npm install.nodemon.
-
+* Am Anfang der Stunde wird der eigene Webserver im Terminal gestartet.Der Befehl wird mit der Pfeiltaste "Nach oben" angezeigt und ausgeführt. 
 
 ## 30.11.2021
-
-* Am Anfang der Stunde wird der eigene Webserver im Terminal gestartet. Der Befehl wird mit der Pfeiltaste "Nach oben" angezeigt und        ausgeführt. 
 * Im Browser wird der Inhalt über die Adresse ````localhost:3000```` aufgerufen. 
 * Der ````localhost:3000```` ist der eigene Rechner.
 * Mit dem Befehl ````ipconfig````(bei Apple: ifconfig) wird die eigene IP-Adresse angezeigt. Die IP-Adresse ist im Netzwerk eindeutig.
@@ -53,3 +51,27 @@
 * Button erstellen. 
 * Style einfügen über styles.css-Datei.
 * Geschweifte Klammer mit ALTGr+7 erstellen.
+
+## 7.12.2021
+* Schriftfarbe in der Styles.css angepasst. 
+* Styles.css in public-Ordner verschoben. 
+* Neuen Ordner angelegt (Public). 
+
+## 10.12.2021
+* Verschiedene Elemente in HTML recherchieren und einbauen.
+* Verschiedene Elemente in HTML sytlen.
+* Gute und weniger gute Quellen im Internet erkennen. Gut sind beispielsweise w3schools oder selfhtml.
+
+## 14.12.2021
+* Unterscheid zwischen JPG und PNG erklärt die (Transparenz).
+* Neues Logo in den Public-Ordner eingeführt. 
+* Bild einfügen.
+* Alt-Tag beim Bild verstehen. 
+* Hyperlink einbauen mit <a href.
+* Target beim Hyperlink verstehen. _Blank öffnet im neuen Tab.
+
+
+## 14.01.2022 Klausur (2)
+* HTML. 
+* CSS.
+

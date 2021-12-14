@@ -1,3 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif; 
+    color:red;
+    background-color: black ;
+    font-size: large;
+    background-image: url('Bank.jpg')
+    
 } 
+p {
+    color: red;
+    width: 400px;
+    border: 5px solid blue;
+    
+  }
+  p {
+    text-align: center; 
+    color: green;
+    background-color: white;
+    color: white;
+    
+}
