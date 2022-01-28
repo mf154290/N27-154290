@@ -70,8 +70,47 @@
 * Hyperlink einbauen mit <a href.
 * Target beim Hyperlink verstehen. _Blank öffnet im neuen Tab.
 
+## 17.12.2021
+* Tabele einfügen.
+* Zeilen <tr> = Table-Row und Zellen <td> = Table-
+Data in HTML-Tabellen verstehen.
+* Liste (geordnet <ol> und ungeordnet <ul>) verstehen.
+* In ungeordneten Listen den Aufzählungspunkt durch Bild ersetzen. 
+* Horizontale Linie <hr> einbauen.
+
+## 21.12.2021
+* Zeilenumbruch <br> einbauen. 
+* N27 Projekt verglichen. 
+
+## 11.01.2022
+* Seiten zum Lernen: selfhtml//w3schools.
 
 ## 14.01.2022 Klausur (2)
-* HTML. 
-* CSS.
+* Ein Lauffähiges Projekt mit einer leeren index.ejs wird ausgeteilt. Es ist keine styles.css vorhanden.
+* Die styles.css muss angelegt und richtig in der index.ejs eingebaut werden.
+* Teil 1:HTML und CSS nach Vorgabe einbauen. Dazu müssen die HTML-Konstruckte aus dem Unterricht bekannt sein.
+* Teil 2: Ein unbekanntes Konstrukt muss im Internet gesucht und eingebaut werden. 
+* Die Styles aus der style.css müssen gekonnt werden. Es kann auch sein, dass unbekannte Styles nach Vorgabe eingebaut werden müssen. Beispiel: gebe der Tabelle einen Rahmen (border) mit der Dicke 1.
+
+## 18.01.2022
+* Weitere Seite erstelle, indem die index.ejs kopiert und umbennant wurde.
+* Hyperlink erstellt.
+
+## 21.01.2022
+* Login-Seite erstellen.
+* Formular aus w3schools kopiert und eingebaut.
+* Type der Inputs entsprechend von Text auf password bzw. Number geändert.
+* Die ID der Inputs setzen.
+* Verlinkung von login nach index und zurück erstellen.
+* Neue Style.css eingefügt und in der index.ejs / login.ejs eingebunden.
+
+## 25.01.2022
+* Unterschied zwischen POST und GET verstehen. 
+* GET transportiert die Daten vom Browser zum Server über die Adresszeile. 
+* POST transportiert die Daten "hinter den Kulissen".
+* Mit ALT + Tab zwischen Browser und VSC hin- und herspringen.
+* Unterschied zwischen app.get(...) und app.post(...) verstehen. 
+* app.get('login') wird ausgeführt, wenn die Login-Seite im Browser angefordert wird. 
+* app.post('login') wird ausgeführt, wenn der Button auf der Login-Seite gedrückt wird.
+http://n27xxxxx.herokuapp.com
 
