@@ -114,3 +114,9 @@ Data in HTML-Tabellen verstehen.
 * app.post('login') wird ausgeführt, wenn der Button auf der Login-Seite gedrückt wird.
 http://n27xxxxx.herokuapp.com
 
+## 28.01.2022
+* app, res, req//Namen geändert mit strg (f).
+* Icon im Browser erstellt mit rel="icon" und favicon.ico datei erstellt. 
+
+
+
