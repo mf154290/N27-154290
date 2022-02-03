@@ -119,8 +119,8 @@ Data in HTML-Tabellen verstehen.
 * Icon im Browser erstellt mit rel="icon" und favicon.ico datei erstellt. 
 
 ## 3.02.2022
-* 
-* 
+* Kunden-Klasse erstellt mit class Kunde.
+* localhost:3000 mit herokuapp verbunden. 
 
 
 
