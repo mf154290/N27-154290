@@ -1,9 +1,9 @@
-// Programme verarbeiten oft Objekte der realen Welt. 
+// Programme verarbeiten oft Objekte der realen Welt.
 // Objekte haben Eigenschaften.
-// In unserem Bankinprogramm interesieren uns Objekte,
-// wie z.B. Kunde, Konto, Filiale, Bankautomat, ... 
+// In unserem Bankingprogramm interessieren uns Objekte,
+// wie z.B. Kunde, Konto, Filiale, Bankautomat, ...
 // Alle Kunden unserer Bank haben dieselben Eigenschaften, aber
-// unterschiedliche Eigenschaftswerte 
+// unterschiedliche Eigenschaftswerte
 
 class Kunde{
     constructor(){
@@ -11,25 +11,26 @@ class Kunde{
         this.Nachname
         this.Vorname
         this.Kennwort
-        this.Kontostand 
+        this.Kontostand
         this.Geburtsdatum
-        this.Mail 
+        this.Mail
     }
 }
 
-// Von der Kunden-Klasse wird eine konkrete Instanz gebildet.
+// Von der Kunden-Klasse wird eine konkrte Instanz
+// gebildet. 
 
 let kunde = new Kunde()
 
-// Die konkrete Instanz bekommt Eigenschaftswerte zugewiesen.
+// Die konkrete Instanz bekommt Eigenschaftswerte
+// zugewiesen
 
-kunde.IdKunde = 154290 
+kunde.IdKunde = 154290
 kunde.Nachname = "Tyler"
 kunde.Vorname = "Sand"
-kunde.Geburtsdatum = "21.5.2000"
+kunde.Geburtsdatum = "21.6.2000"
 kunde.Mail = "Tyler@web.de"
 kunde.Kennwort = "123"
-
 
 
 const express = require('express')
@@ -47,34 +48,35 @@ meineApp.get('/',(browserAnfrage, serverAntwort, next) => {
     serverAntwort.render('index.ejs', {})          
 })
 
-meineApp.post('/login',(browserAnfrage, serverAntwort, next) => {  
+meineApp.post('/login',(browserAnfrage, serverAntwort, next) => {              
     
-    const idKunde = browserAnfrage.body.IdKunde 
-    const kennwort = browserAnfrage.body.Kennwort 
+    const idKunde = browserAnfrage.body.IdKunde
+    const kennwort = browserAnfrage.body.Kennwort
     
-    console.log("ID des Kunden:" +idKunde)
-    console.log("Kennwort des Kunden:" +kennwort)
+    console.log("ID des Kunden: " + idKunde)
+    console.log("Kennwort des Kunden: " + kennwort)
 
     if(idKunde == kunde.idKunde){
-        serverAntwort.render('index.ejs', {}) 
+        serverAntwort.render('index.ejs', {})
     }
     serverAntwort.render('login.ejs', {})
-    
 })
 
-// Wenn die Login-Seite im Browser aufgerufen wird,...
 
-meineApp.get('/login',(browserAnfrage, serverAntwort, next) => {     
-    
-    //... dann wird die login.ejs vom Server gerendert an den
+// Wenn die login-Seite im Browser aufgerufen wird, ...
+
+meineApp.get('/login',(browserAnfrage, serverAntwort, next) => {              
+
+    // ... dann wird die login.ejs vom Server gerendert an den
     // Browser zurückgegeben:
-    
+
     serverAntwort.render('login.ejs', {})          
 })
 
-// Die meineApp.post ('login') wird ausgeführt, sobald der Button
+// Die meineApp.post('login') wird ausgeführt, sobald der Button
 // auf dem Login-Formular gedrückt wird.
 
-meineApp.post('/login',(browserAnfrage, serverAntwort, next) => {    
+meineApp.post('/login',(browserAnfrage, serverAntwort, next) => {              
     serverAntwort.render('index.ejs', {})          
 })
+
