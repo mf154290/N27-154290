@@ -112,11 +112,15 @@ Data in HTML-Tabellen verstehen.
 * Unterschied zwischen app.get(...) und app.post(...) verstehen. 
 * app.get('login') wird ausgeführt, wenn die Login-Seite im Browser angefordert wird. 
 * app.post('login') wird ausgeführt, wenn der Button auf der Login-Seite gedrückt wird.
-http://n27xxxxx.herokuapp.com
+* App im Internet starten http://n27xxxxx.herokuapp.com
 
 ## 28.01.2022
 * app, res, req//Namen geändert mit strg (f).
 * Icon im Browser erstellt mit rel="icon" und favicon.ico datei erstellt. 
+
+## 3.02.2022
+* 
+* 
 
 
 
