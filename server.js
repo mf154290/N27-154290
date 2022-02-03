@@ -55,7 +55,11 @@ meineApp.post('/login',(browserAnfrage, serverAntwort, next) => {
     console.log("ID des Kunden:" +idKunde)
     console.log("Kennwort des Kunden:" +kennwort)
 
-    serverAntwort.render('index.ejs', {})          
+    if(idKunde == kunde.idKunde){
+        serverAntwort.render('index.ejs', {}) 
+    }
+    serverAntwort.render('login.ejs', {})
+    
 })
 
 // Wenn die Login-Seite im Browser aufgerufen wird,...
