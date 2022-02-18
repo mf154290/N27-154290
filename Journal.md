@@ -99,3 +99,20 @@ Seiten zum Lernen von HTML:
   ## 3.02.2022
   * Kunden-Klasse erstellt mit class Kunde.
   * localhost:3000 mit herokuapp verbunden.
+
+  ## 4.02.2022
+  * ifUndElse.js erstellt und ihm server.js eingebunden mit require. 
+  * If Anweisung erstellt mit if und else. 
+
+  ## 10.02.2022
+  * Javascript if und else Klasse erstellt.
+  * A1 // B1 werden geprüft und Vergliechen. 
+  * Neue Datei hinzugefügt und eingebunden klasseUndObjekte.js.
+
+  ## 11.02.2022
+  * klasseUndObjekte Übungen durchgeführt mit den constructor und der if und else Anweisung.
+  * Objekte Initialisieren und  Klassendefinition verwaltet mit console.log.
+
+  ## 17.02.2022
+  * if and && erstellt für kunde (Kennwort)
+   
