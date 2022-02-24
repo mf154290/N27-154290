@@ -53,7 +53,11 @@ meineApp.get('/',(browserAnfrage, serverAntwort, next) => {
 // Wenn der Kunde bereits angemeldet ist, soll die
 // index-Seite an den Browser gegeben werden. 
     
-    if(true){
+// Wenn ein signierter Cookie mit Namen 'istAngemeldetAls' im Browser vorhanden ist,
+// dann ist die Prüfung wahr und es wird die gerenderte Index-Seite an den Browser
+// zurückgegeben. Anderenfalls wird die Login-Seite an den Browser gegeben.
+
+    if(browserAnfrage.signedCookies['istAngemeldetAls']){
         serverAntwort.render('index.ejs',{})
     }else{
 
@@ -89,6 +93,7 @@ meineApp.post('/login',(browserAnfrage, serverAntwort, next) => {
 // Der Cookie wird signiert, also gegen Manipulationen geschützt. 
 
         serverAntwort.cookie('istAngemeldetAls',JSON.stringify(kunde),{signed:true})
+        console.log("Der Cookie wurde erfolgreich gesetzt.")
 
 // Wenn die Id des Kunden mit der Eingabe im Browser übereinstimmt
 // UND ("&&") das Kennwort ebenfalls übereinstimmt,
@@ -115,6 +120,10 @@ meineApp.get('/login',(browserAnfrage, serverAntwort, next) => {
 
 // ... dann wird die login.ejs vom Server gerendert an den
 // Browser zurückgegeben:
+
+// Der Cookie wird gelöscht
+
+serverAntwort.clearCookie('istAngemeldetAls')
 
     serverAntwort.render('login.ejs', {
         meldung : "Bitte geben sie die Zugangsdaten ein"
