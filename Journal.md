@@ -114,5 +114,12 @@ Seiten zum Lernen von HTML:
   * Objekte Initialisieren und  Klassendefinition verwaltet mit console.log.
 
   ## 17.02.2022
-  * if and && erstellt für kunde (Kennwort)
+  * if and && erstellt für kunde (Kennwort). 
+
+  ## 18.02.2022
+  * (% Meldung %) im server in der login.ejs erstellt. 
+
+  ## 24.02.2022
+  * Cookie erstellt und in der server.js eingefügt. 
+
    
