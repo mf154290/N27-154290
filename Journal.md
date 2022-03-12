@@ -122,4 +122,8 @@ Seiten zum Lernen von HTML:
   ## 24.02.2022
   * Cookie erstellt und in der server.js eingefügt. 
 
+  ## 25.02.2022
+  * Logo eingebaut und mit einem Hyperlink verbunden.
+ 
+  
    
