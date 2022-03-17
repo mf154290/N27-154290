@@ -14,6 +14,7 @@ class Kunde{
         this.Kontostand
         this.Geburtsdatum
         this.Mail
+        this.Rufnummer
     }
 }
 
@@ -24,11 +25,12 @@ let kunde = new Kunde()
 // Die konkrete Instanz bekommt Eigenschaftswerte zugewiesen.
 
 kunde.IdKunde = 154290
-kunde.Nachname = "Tyler"
-kunde.Vorname = "Sand"
+kunde.Nachname = "Sand"
+kunde.Vorname = "Tyler"
 kunde.Geburtsdatum = "21.6.2000"
 kunde.Mail = "Tyler@web.de"
 kunde.Kennwort = "123"
+kunde.Rufnummer = "0123456789"
 
 
 const express = require('express')
@@ -140,6 +142,11 @@ meineApp.get('/about',(browserAnfrage, serverAntwort, next) => {
 meineApp.get('/profile',(browserAnfrage, serverAntwort, next) => {              
 
     serverAntwort.render('profile.ejs', {
+        Vorname: kunde.Vorname, 
+        Nachname: kunde.Nachname,
+        Mail: kunde.Mail,
+        Rufnummer: kunde.Rufnummer
+
     })          
 })
 
