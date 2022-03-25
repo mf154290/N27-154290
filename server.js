@@ -1,9 +1,8 @@
-// Programme verarbeiten oft Objekte der realen Welt.
-// Objekte haben Eigenschaften.
-// In unserem Bankingprogramm interessieren uns Objekte,
+// Programme verarbeiten oft Objekte der realen Welt. Objekte haben 
+// Eigenschaften. In unserem Bankingprogramm interessieren uns Objekte,
 // wie z.B. Kunde, Konto, Filiale, Bankautomat, ...
 // Alle Kunden unserer Bank haben dieselben Eigenschaften, aber
-// unterschiedliche Eigenschaftswerte
+// unterschiedliche Eigenschaftswerte.
 
 class Kunde{
     constructor(){
@@ -18,7 +17,7 @@ class Kunde{
     }
 }
 
-// Von der Kunden-Klasse wird eine konkrte Instanz gebildet. 
+// Von der Kunden-Klasse wird eine konkrete Instanz gebildet. 
 
 let kunde = new Kunde()
 
@@ -27,11 +26,10 @@ let kunde = new Kunde()
 kunde.IdKunde = 154290
 kunde.Nachname = "Sand"
 kunde.Vorname = "Tyler"
-kunde.Geburtsdatum = "21.6.2000"
+kunde.Geburtsdatum = "22.5.2000"
 kunde.Mail = "Tyler@web.de"
 kunde.Kennwort = "123"
-kunde.Rufnummer = "0123456789"
-
+kunde.Rufnummer = "+49123/4567890"
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -125,7 +123,7 @@ meineApp.get('/login',(browserAnfrage, serverAntwort, next) => {
     serverAntwort.clearCookie('istAngemeldetAls')
 
     serverAntwort.render('login.ejs', {
-        meldung : "Bitte geben Sie die Zugangsdaten ein."
+        Meldung: "Bitte geben Sie die Zugangsdaten ein."
     })          
 })
 
@@ -142,12 +140,35 @@ meineApp.get('/about',(browserAnfrage, serverAntwort, next) => {
 meineApp.get('/profile',(browserAnfrage, serverAntwort, next) => {              
 
     serverAntwort.render('profile.ejs', {
-        Vorname: kunde.Vorname, 
+        Vorname: kunde.Vorname,
         Nachname: kunde.Nachname,
         Mail: kunde.Mail,
-        Rufnummer: kunde.Rufnummer
-
+        Rufnummer: kunde.Rufnummer,
+        Kennwort: kunde.Kennwort
     })          
+})
+
+// Sobald der Speichern-Button auf der Profile-Seite gedrückt wird,
+// wird die meineApp.post('profile'...) abgearbeitet.
+
+meineApp.post('/profile',(browserAnfrage, serverAntwort, next) => {              
+    
+    // Der Wert der Eigenschaft von Mail im Browser wird
+    // zugewiesen (=) an die Eigenschaft Mail des Objekts kunde
+
+    kunde.Mail = browserAnfrage.body.Mail
+    kunde.Kennwort = browserAnfrage.body.Kennwort
+    kunde.Rufnummer = browserAnfrage.body.Rufnummer
+    
+    console.log("Profil gespeichert.")
+    
+    serverAntwort.render('profile.ejs', {
+        Vorname: kunde.Vorname,
+        Nachname: kunde.Nachname,
+        Mail: kunde.Mail,
+        Rufnummer: kunde.Rufnummer,
+        Kennwort: kunde.Kennwort
+    })
 })
 
 

@@ -16,31 +16,32 @@
         </div>
         <div class="navigationsleiste">            
             <a href="/">
-                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-home fa-2x" aria-hidden="true" title="Willkommen"></i>
             </a> --
             <a href="/profile">
-                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-user fa-2x" aria-hidden="true" title="Mein Profil"></i>
             </a>   --
             <a href="/about">
-                <i class="fa fa-info fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-info fa-2x" aria-hidden="true" title="Über uns"></i>
             </a>   --
-            <a href="/login"><i class="fa fa-sign-out fa-2x"></i></a>
+            <a href="/login">
+                <i class="fa fa-sign-out fa-2x" title="Abmelden"></i>
+            </a>
         </div>
         <div class="inhaltsbereich">
             <form method="post">
-                <label for="fname">Vorname:</label><br>
-                <input type="text" name="Vorname" readonly value=<%= Vorname %> <br>
-                <label for="lname">Nachname:</label><br>
-                <input type="text" name="Nachname" readonly value=<%= Nachname %> <br>      
-                <label for="fname">Mail:</label><br>
-                <input type="email" name="Mail" value=<%= Mail %> <br>  
-                <label for="fname">Rufnummer:</label><br>
-                <input type="tel" name="Rufnummer" value=<%= Rufnummer %> <br>  
-
-
-                <button class="login" formaction="/login">Änderung speichern</button>
-            </form> 
-
+                <label>Vorname:</label><br>
+                <input type="text" name="Vorname" readonly value=<%= Vorname %>  ><br>
+                <label>Nachname:</label><br>
+                <input type="text" name="Nachname" value=<%= Nachname %> readonly><br>        
+                <label>Mail:</label><br>
+                <input type="email" name="Mail" value=<%= Mail %>  ><br>
+                <label>Kennwort:</label><br>
+                <input type="password" name="Kennwort" value=<%= Kennwort %>  ><br>
+                <label>Rufnummer:</label><br>
+                <input type="tel" name="Rufnummer" value=<%= Rufnummer %>  ><br>
+                <button class="login" formaction="/profile" onclick="alert('Ihre Änderung wurde erfolgreich gespeichert!')">Änderung speichern</button>
+            </form>     
         </div>
         <div class="fusszeile">
             &copy; 2022 GW21A
