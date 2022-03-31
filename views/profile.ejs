@@ -40,8 +40,9 @@
                 <input type="password" name="Kennwort" value=<%= Kennwort %>  ><br>
                 <label>Rufnummer:</label><br>
                 <input type="tel" name="Rufnummer" value=<%= Rufnummer %>  ><br>
-                <button class="login" formaction="/profile" onclick="alert('Ihre Änderung wurde erfolgreich gespeichert!')">Änderung speichern</button>
-            </form>     
+                <button class="login" formaction="/profile">Änderung speichern</button>
+            </form>   
+            <p class="erfolgsmeldung"><%= Erfolgsmeldung %></p>  
         </div>
         <div class="fusszeile">
             &copy; 2022 GW21A
