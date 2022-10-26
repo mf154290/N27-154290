@@ -203,4 +203,4 @@ if(Pit1 == Git2){
    console.log("Pit1 ist gleich Git2")
 }else{
    console.log("Pit1 ist nicht gleich Git2")
-}
+} 
