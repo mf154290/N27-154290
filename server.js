@@ -261,6 +261,25 @@ meineApp.get('/profile',(browserAnfrage, serverAntwort, next) => {
     }          
 })
 
+meineApp.get('/Bonus',(browserAnfrage, serverAntwort, next) => {              
+
+    if(browserAnfrage.signedCookies['istAngemeldetAls']){
+        serverAntwort.render('Bonus.ejs', {
+            Vorname: kunde.Vorname,
+            Nachname: kunde.Nachname,
+            Mail: kunde.Mail,
+            Rufnummer: kunde.Rufnummer,
+            Kennwort: kunde.Kennwort,
+            Erfolgsmeldung: ""
+        })
+    }else{
+        serverAntwort.render('login.ejs',{
+            Meldung: ""
+        })
+    }          
+})
+
+
 meineApp.get('/support',(browserAnfrage, serverAntwort, next) => {              
 
     if(browserAnfrage.signedCookies['istAngemeldetAls']){
